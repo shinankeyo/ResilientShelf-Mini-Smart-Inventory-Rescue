@@ -1,0 +1,17 @@
+from_store,to_store,unit_cost_usd
+CA_1,CA_1,0.0
+CA_1,CA_2,1.5
+CA_1,CA_3,2.5
+CA_1,CA_4,3.5
+CA_2,CA_1,1.5
+CA_2,CA_2,0.0
+CA_2,CA_3,1.0
+CA_2,CA_4,2.0
+CA_3,CA_1,2.5
+CA_3,CA_2,1.0
+CA_3,CA_3,0.0
+CA_3,CA_4,3.0
+CA_4,CA_1,3.5
+CA_4,CA_2,2.0
+CA_4,CA_3,3.0
+CA_4,CA_4,0.0
