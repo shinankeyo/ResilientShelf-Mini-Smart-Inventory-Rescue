@@ -49,45 +49,9 @@ Team_Chuyen_Kho/
 └── README.md
 ```
 
----
 
-## 3. Hướng dẫn cài đặt và chạy trên Windows
 
-### Bước 1: Cài đặt thư viện
-```powershell
-py -m pip install -r requirements.txt
-```
-
-### Bước 2: Tải dữ liệu M5 gốc từ Kaggle
-Do bộ dữ liệu cuộc thi **M5 Forecasting – Accuracy** yêu cầu đăng nhập tài khoản Kaggle và chấp nhận điều khoản cuộc thi:
-1. Truy cập https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
-2. Đăng nhập và chấp nhận điều khoản (*Join Competition / I Understand and Accept*).
-3. Tải file `sales_train_validation.csv` (có thể tải thêm `calendar.csv` nếu muốn).
-4. Giải nén (nếu là `.zip`) và chép vào thư mục `data/raw/sales_train_validation.csv`.
-
-### Bước 3: Kiểm thử logic thuật toán (có thể chạy trước khi tải dữ liệu)
-```powershell
-py src/verify_pipeline.py
-```
-
-### Bước 4: Xử lý dữ liệu, EDA và tạo kịch bản
-```powershell
-py src/prepare_data.py
-```
-
-### Bước 5: Chạy thực nghiệm và sinh biểu đồ
-```powershell
-py src/run_experiments.py
-```
-
-### Bước 6: Khởi chạy ứng dụng Demo Streamlit
-```powershell
-py -m streamlit run app/app.py
-```
-
----
-
-## 4. Tài liệu tham khảo chính
+## 3. Tài liệu tham khảo chính
 1. Kaggle, *M5 Forecasting – Accuracy*, https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
 2. Ghasemi, M., Khodadadi, N., Trojovský, P., Li, L., Mansor, Z., Abualigah, L., Alharbi, A. H., & El-Kenawy, E.-S. M. (2025). *Kirchhoff’s law algorithm (KLA): a novel physics-inspired non-parametric metaheuristic algorithm for optimization problems*. Artificial Intelligence Review, 58, 325. https://doi.org/10.1007/s10462-025-11289-5
 3. Mã tham khảo KLA trên MathWorks File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/181589-kirchhoff-s-law-algorithm-kla
