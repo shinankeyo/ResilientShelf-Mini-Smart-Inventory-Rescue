@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Dữ liệu M5 gốc rất nặng (tải riêng từ Kaggle theo hướng dẫn)
+data/raw/*.csv
+data/raw/*.zip
+docs/*.zip
+
+# Hệ điều hành / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
